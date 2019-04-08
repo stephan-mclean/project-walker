@@ -1,0 +1,14 @@
+:root {
+  --radius: 0.5rem;
+
+  /* Shadows */
+  --shadow-fg-secondary-1-top: 0 -1px 0 0 var(--color-fg-secondary);
+  --shadow-fg-secondary-1-bottom-right-25: 1px 1px 4px 0
+    rgba(var(--color-fg-secondary-rgb), 0.25);
+  --shadow-fg-tertiary-1-bottom: 0 1px 0 0 var(--color-fg-tertiary);
+  --shadow-fg-tertiary-1-bottom-right-25: 1px 1px 4px 0
+    rgba(var(--color-fg-tertiary-rgb), 0.25);
+  --shadow-fg-tertiary-1-top-25: 0 -1px 4px 0 rgba(var(--color-fg-tertiary-rgb), 0.25);
+  --shadow-primary-dark-1-bottom-right-25: 1px 1px 4px 0
+    rgba(var(--color-primary-dark-rgb), 0.25);
+}
