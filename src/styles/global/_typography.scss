@@ -3,10 +3,10 @@
 :root {
   --font-primary: "Heebo", sans-serif;
 
-  --text-base-size: 1em;
+  --text-base-size: 1rem;
 
   --text-scale-ratio: 1.2;
-  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-xs: calc((1rem / var(--text-scale-ratio)) / var(--text-scale-ratio));
   --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
   --text-md: calc(
     var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio)
@@ -34,10 +34,12 @@ h4,
 h5,
 h6 {
   line-height: var(--heading-line-height);
+  margin-bottom: var(--space-xs);
 }
 
 p {
   line-height: var(--body-line-height);
+  margin-bottom: var(--space-sm);
 }
 
 h1,
