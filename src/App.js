@@ -24,6 +24,17 @@ class App extends Component {
           sagittis faucibus nisi. Proin in risus malesuada, molestie arcu
           faucibus, sagittis odio.
         </p>
+
+        <button className="btn">Button</button>
+        <button className="btn btn--primary">Button</button>
+        <button className="btn btn--danger">Button</button>
+        <button className="btn btn--inverted">Button</button>
+        <button className="btn btn--outline">Button</button>
+        <button className="btn btn--link">Button</button>
+        <button className="btn btn--primary btn--link">Button</button>
+        <button className="btn" disabled>
+          Button
+        </button>
       </div>
     );
   }

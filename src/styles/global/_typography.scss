@@ -19,6 +19,11 @@
 
   --body-line-height: 1.4;
   --heading-line-height: 1.2;
+
+  --text-weight-light: 300;
+  --text-weight-reg: 400;
+  --text-weight-bold: 700;
+  --text-weight-black: 900;
 }
 
 @supports (--css: variables) {
@@ -92,17 +97,17 @@ small {
 
 h1,
 h2 {
-  font-weight: 300;
+  font-weight: var(--text-weight-light);
 }
 
 h3,
 h4,
 h5 {
-  font-weight: 400;
+  font-weight: var(--text-weight-reg);
 }
 
 h6 {
-  font-weight: 900;
+  font-weight: var(--text-weight-black);
 }
 
 .text--color-default {
