@@ -8,7 +8,7 @@
   --color-bg-tertiary: #664242;
 
   --color-white: #ffffff;
-  --color-white-75: rgba(255, 255, 255, 0.75);
+  --color-white-75: rgba(var(--color-white), 0.75);
 
   --color-primary-default: #6a7fdb;
   --color-primary-dark: #050e33;
