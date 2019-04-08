@@ -33,7 +33,7 @@
 body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
-  // TODO: Set color here
+  color: var(--color-fg-default);
 }
 
 h1,
@@ -103,4 +103,16 @@ h5 {
 
 h6 {
   font-weight: 900;
+}
+
+.text--color-default {
+  color: var(--color-fg-default);
+}
+
+.text--color-secondary {
+  color: var(--color-fg-secondary);
+}
+
+.text--color-tertiary {
+  color: var(--color-fg-tertiary);
 }
