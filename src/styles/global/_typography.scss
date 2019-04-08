@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900");
+
+:root {
+  --font-primary: "Heebo", sans-serif;
+
+  --text-base-size: 1em;
+
+  --text-scale-ratio: 1.2;
+  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(
+    var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
+
+  --body-line-height: 1.4;
+  --heading-line-height: 1.2;
+}
+
+body {
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  // TODO: Set color here
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--heading-line-height);
+}
+
+p {
+  line-height: var(--body-line-height);
+}
+
+h1,
+.text--xxxxl {
+  font-size: var(--text-xxxxl);
+}
+
+h2,
+.text--xxxl {
+  font-size: var(--text-xxxl);
+}
+
+h3,
+.text--xxl {
+  font-size: var(--text-xxl);
+}
+
+h4,
+.text--xl {
+  font-size: var(--text-xl);
+}
+
+h5,
+.text--lg {
+  font-size: var(--text-lg);
+}
+
+h6,
+.text--md {
+  font-size: var(--text-md);
+}
+
+.text--sm,
+small {
+  font-size: var(--text-sm);
+}
+
+.text--xs {
+  font-size: var(--text-xs);
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+h6 {
+  font-weight: 900;
+}
