@@ -48,3 +48,66 @@
   --color-tags-eight-bg: #6dd6da;
   --color-tags-eight-fg: #084a4d;
 }
+
+@mixin withColors($bg, $fg) {
+  background-color: $bg;
+  color: $fg;
+}
+
+.default-coloring {
+  @include withColors(var(--color-bg-default), var(--color-fg-default));
+}
+
+.high-contrast-coloring {
+  @include withColors(var(--color-white), var(--color-fg-default));
+}
+
+.transparent-high-contrast-coloring {
+  @include withColors(var(--color-white-75), var(--color-fg-default));
+}
+
+.primary-coloring {
+  @include withColors(
+    var(--color-primary-default),
+    var(--color-primary-verylight)
+  );
+}
+
+.danger-coloring {
+  @include withColors(
+    var(--color-danger-default),
+    var(--color-danger-verylight)
+  );
+}
+
+.tag-one-coloring {
+  @include withColors(var(--color-tags-one-bg), var(--color-tags-one-fg));
+}
+
+.tag-two-coloring {
+  @include withColors(var(--color-tags-two-bg), var(--color-tags-two-fg));
+}
+
+.tag-three-coloring {
+  @include withColors(var(--color-tags-three-bg), var(--color-tags-three-fg));
+}
+
+.tag-four-coloring {
+  @include withColors(var(--color-tags-four-bg), var(--color-tags-four-fg));
+}
+
+.tag-five-coloring {
+  @include withColors(var(--color-tags-five-bg), var(--color-tags-five-fg));
+}
+
+.tag-six-coloring {
+  @include withColors(var(--color-tags-six-bg), var(--color-tags-six-fg));
+}
+
+.tag-seven-coloring {
+  @include withColors(var(--color-tags-seven-bg), var(--color-tags-seven-fg));
+}
+
+.tag-eight-coloring {
+  @include withColors(var(--color-tags-eight-bg), var(--color-tags-eight-fg));
+}

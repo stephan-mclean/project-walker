@@ -1,0 +1,40 @@
+:root {
+  --radius: 0.5rem;
+}
+
+.radius {
+  border-radius: var(--radius);
+}
+
+.radius-top {
+  border-radius: 0;
+
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.radius-top-left {
+  border-radius: 0;
+  border-top-left-radius: var(--radius);
+}
+
+.radius-top-right {
+  border-radius: 0;
+  border-top-right-radius: var(--radius);
+}
+
+.radius-bottom {
+  border-radius: 0;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+.radius-bottom-left {
+  border-radius: 0;
+  border-bottom-left-radius: var(--radius);
+}
+
+.radius-bottom-right {
+  border-radius: 0;
+  border-bottom-right-radius: var(--radius);
+}
