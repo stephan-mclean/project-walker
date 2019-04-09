@@ -24,7 +24,7 @@ ShallowWrapper {
         undefined,
         undefined,
       ],
-      "className": "container high-contrast-coloring margin-bottom primary-coloring radius",
+      "className": "container high-contrast-coloring margin-bottom radius primary-coloring",
     },
     "ref": null,
     "rendered": Array [
@@ -43,7 +43,7 @@ ShallowWrapper {
           undefined,
           undefined,
         ],
-        "className": "container high-contrast-coloring margin-bottom primary-coloring radius",
+        "className": "container high-contrast-coloring margin-bottom radius primary-coloring",
       },
       "ref": null,
       "rendered": Array [
@@ -104,7 +104,7 @@ ShallowWrapper {
         undefined,
         "Card",
       ],
-      "className": "container high-contrast-coloring margin-bottom undefined radius",
+      "className": "container high-contrast-coloring margin-bottom radius ",
     },
     "ref": null,
     "rendered": Array [
@@ -123,7 +123,7 @@ ShallowWrapper {
           undefined,
           "Card",
         ],
-        "className": "container high-contrast-coloring margin-bottom undefined radius",
+        "className": "container high-contrast-coloring margin-bottom radius ",
       },
       "ref": null,
       "rendered": Array [
@@ -188,7 +188,7 @@ ShallowWrapper {
           Child
         </div>,
       ],
-      "className": "container high-contrast-coloring margin-bottom undefined radius",
+      "className": "container high-contrast-coloring margin-bottom radius ",
     },
     "ref": null,
     "rendered": Array [
@@ -219,7 +219,7 @@ ShallowWrapper {
             Child
           </div>,
         ],
-        "className": "container high-contrast-coloring margin-bottom undefined radius",
+        "className": "container high-contrast-coloring margin-bottom radius ",
       },
       "ref": null,
       "rendered": Array [
@@ -298,7 +298,7 @@ ShallowWrapper {
         </div>,
         undefined,
       ],
-      "className": "container high-contrast-coloring margin-bottom undefined radius",
+      "className": "container high-contrast-coloring margin-bottom radius ",
     },
     "ref": null,
     "rendered": Array [
@@ -357,7 +357,7 @@ ShallowWrapper {
           </div>,
           undefined,
         ],
-        "className": "container high-contrast-coloring margin-bottom undefined radius",
+        "className": "container high-contrast-coloring margin-bottom radius ",
       },
       "ref": null,
       "rendered": Array [
@@ -456,7 +456,7 @@ ShallowWrapper {
         </div>,
         undefined,
       ],
-      "className": "container high-contrast-coloring margin-bottom undefined radius",
+      "className": "container high-contrast-coloring margin-bottom radius ",
     },
     "ref": null,
     "rendered": Array [
@@ -510,7 +510,7 @@ ShallowWrapper {
           </div>,
           undefined,
         ],
-        "className": "container high-contrast-coloring margin-bottom undefined radius",
+        "className": "container high-contrast-coloring margin-bottom radius ",
       },
       "ref": null,
       "rendered": Array [

@@ -18,7 +18,7 @@ storiesOf("Components", module).add("Card", () => {
         With title and description
       </Card>
 
-      <Card fullscreen>fullscreen</Card>
+      <Card className="radius-bottom">fullscreen</Card>
 
       <Card className="primary-coloring">With custom class</Card>
     </Fragment>

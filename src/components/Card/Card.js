@@ -1,22 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./Card.module.scss";
 
-const Card = ({
-  children,
-  title,
-  description,
-  fullscreen,
-  centerTitle,
-  className
-}) => {
-  let cardClassName = `${
+const Card = ({ children, title, description, centerTitle, className }) => {
+  const cardClassName = `${
     styles.container
-  } high-contrast-coloring margin-bottom ${className}`;
-  if (fullscreen) {
-    cardClassName += ` radius-bottom`;
-  } else {
-    cardClassName += " radius";
-  }
+  } high-contrast-coloring margin-bottom radius ${className || ""}`;
 
   let titleDescClassName = `flex flex--column`;
   if (centerTitle) {
@@ -35,6 +24,14 @@ const Card = ({
       {children}
     </div>
   );
+};
+
+Card.propTypes = {
+  children: PropTypes.any,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  centerTitle: PropTypes.bool,
+  className: PropTypes.string
 };
 
 export default Card;
