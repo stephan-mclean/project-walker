@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the TagFilter component Should render the correct buttons 1`] = `
+<TagFilter
+  onSelectionChange={[MockFunction]}
+  tags={
+    Array [
+      Object {
+        "selected": false,
+        "tag": "one",
+        "text": "one",
+      },
+    ]
+  }
+>
+  <Card
+    title="Tags"
+  >
+    <div
+      className="container high-contrast-coloring margin-bottom radius "
+    >
+      <div
+        className="flex flex--column"
+      >
+        <h6>
+          Tags
+        </h6>
+      </div>
+      <div
+        className="flex"
+      >
+        <div>
+          <Button
+            className="btn btn--inverted margin-right"
+            data-testid="allBtn"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn btn--inverted margin-right"
+              data-testid="allBtn"
+              onClick={[Function]}
+              type="button"
+            >
+              All
+            </button>
+          </Button>
+        </div>
+        <div>
+          <Button
+            className="btn radius-top-left tag-one-inverted-coloring"
+            data-testid="tag-btn-one"
+            key="tag-filter-one-0"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn radius-top-left tag-one-inverted-coloring"
+              data-testid="tag-btn-one"
+              onClick={[Function]}
+              type="button"
+            >
+              one
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Card>
+</TagFilter>
+`;
+
+exports[`Testing the TagFilter component Should toggle all selection values 1`] = `
+<TagFilter
+  onSelectionChange={[MockFunction]}
+  tags={
+    Array [
+      Object {
+        "selected": false,
+        "tag": "one",
+        "text": "one",
+      },
+      Object {
+        "selected": false,
+        "tag": "two",
+        "text": "two",
+      },
+    ]
+  }
+>
+  <Card
+    title="Tags"
+  >
+    <div
+      className="container high-contrast-coloring margin-bottom radius "
+    >
+      <div
+        className="flex flex--column"
+      >
+        <h6>
+          Tags
+        </h6>
+      </div>
+      <div
+        className="flex"
+      >
+        <div>
+          <Button
+            className="btn btn--inverted margin-right"
+            data-testid="allBtn"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn btn--inverted margin-right"
+              data-testid="allBtn"
+              onClick={[Function]}
+              type="button"
+            >
+              All
+            </button>
+          </Button>
+        </div>
+        <div>
+          <Button
+            className="btn radius-top-left tag-one-inverted-coloring"
+            data-testid="tag-btn-one"
+            key="tag-filter-one-0"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn radius-top-left tag-one-inverted-coloring"
+              data-testid="tag-btn-one"
+              onClick={[Function]}
+              type="button"
+            >
+              one
+            </button>
+          </Button>
+          <Button
+            className="btn radius-bottom-right tag-two-inverted-coloring"
+            data-testid="tag-btn-two"
+            key="tag-filter-two-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn radius-bottom-right tag-two-inverted-coloring"
+              data-testid="tag-btn-two"
+              onClick={[Function]}
+              type="button"
+            >
+              two
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Card>
+</TagFilter>
+`;
+
+exports[`Testing the TagFilter component Should toggle all selection values 2`] = `
+<TagFilter
+  onSelectionChange={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Array [
+            Object {
+              "selected": true,
+              "tag": "one",
+              "text": "one",
+            },
+            Object {
+              "selected": true,
+              "tag": "two",
+              "text": "two",
+            },
+          ],
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  tags={
+    Array [
+      Object {
+        "selected": true,
+        "tag": "one",
+        "text": "one",
+      },
+      Object {
+        "selected": true,
+        "tag": "two",
+        "text": "two",
+      },
+    ]
+  }
+>
+  <Card
+    title="Tags"
+  >
+    <div
+      className="container high-contrast-coloring margin-bottom radius "
+    >
+      <div
+        className="flex flex--column"
+      >
+        <h6>
+          Tags
+        </h6>
+      </div>
+      <div
+        className="flex"
+      >
+        <div>
+          <Button
+            className="btn btn--inverted margin-right"
+            data-testid="allBtn"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn btn--inverted margin-right"
+              data-testid="allBtn"
+              onClick={[Function]}
+              type="button"
+            >
+              All
+            </button>
+          </Button>
+        </div>
+        <div>
+          <Button
+            className="btn radius-top-left tag-one-inverted-coloring"
+            data-testid="tag-btn-one"
+            key="tag-filter-one-0"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn radius-top-left tag-one-inverted-coloring"
+              data-testid="tag-btn-one"
+              onClick={[Function]}
+              type="button"
+            >
+              one
+            </button>
+          </Button>
+          <Button
+            className="btn radius-bottom-right tag-two-inverted-coloring"
+            data-testid="tag-btn-two"
+            key="tag-filter-two-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn radius-bottom-right tag-two-inverted-coloring"
+              data-testid="tag-btn-two"
+              onClick={[Function]}
+              type="button"
+            >
+              two
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Card>
+</TagFilter>
+`;

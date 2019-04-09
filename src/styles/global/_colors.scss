@@ -111,3 +111,35 @@
 .tag-eight-coloring {
   @include withColors(var(--color-tags-eight-bg), var(--color-tags-eight-fg));
 }
+
+.tag-one-inverted-coloring {
+  @include withColors(var(--color-bg-default), var(--color-tags-one-bg));
+}
+
+.tag-two-inverted-coloring {
+  @include withColors(var(--color-bg-default), var(--color-tags-two-bg));
+}
+
+.tag-three-inverted-coloring {
+  @include withColors(var(--color-bg-default), var(--color-tags-three-bg));
+}
+
+.tag-four-inverted-coloring {
+  @include withColors(var(--color-bg-default), var(--color-tags-four-bg));
+}
+
+.tag-five-inverted-coloring {
+  @include withColors(var(--color-bg-default), var(--color-tags-five-bg));
+}
+
+.tag-six-inverted-coloring {
+  @include withColors(var(--color-bg-default), var(--color-tags-six-bg));
+}
+
+.tag-seven-inverted-coloring {
+  @include withColors(var(--color-bg-default), var(--color-tags-seven-bg));
+}
+
+.tag-eight-inverted-coloring {
+  @include withColors(var(--color-bg-default), var(--color-tags-eight-bg));
+}
