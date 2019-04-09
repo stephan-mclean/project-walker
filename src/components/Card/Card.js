@@ -1,23 +1,34 @@
 import React from "react";
 import styles from "./Card.module.scss";
 
-const Card = ({ children, title, description, fullscreen, centerTitle }) => {
-  let className = `${styles.container} margin-bottom`;
+const Card = ({
+  children,
+  title,
+  description,
+  fullscreen,
+  centerTitle,
+  className
+}) => {
+  let cardClassName = `${
+    styles.container
+  } high-contrast-coloring margin-bottom ${className}`;
   if (fullscreen) {
-    className += ` ${styles.fullscreen}`;
+    cardClassName += ` radius-bottom`;
+  } else {
+    cardClassName += " radius";
   }
 
-  let titleDescClassName = `${styles.titleDescContainer}`;
+  let titleDescClassName = `flex flex--column`;
   if (centerTitle) {
-    titleDescClassName += ` ${styles.centered}`;
+    titleDescClassName += ` flex--center-y`;
   }
 
   return (
-    <div className={className}>
+    <div className={cardClassName}>
       {(title || description) && (
         <div className={titleDescClassName}>
           {title && <h6>{title}</h6>}
-          {description && <p>{description}</p>}
+          {description && <p className="s2">{description}</p>}
         </div>
       )}
 

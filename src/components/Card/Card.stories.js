@@ -19,6 +19,8 @@ storiesOf("Components", module).add("Card", () => {
       </Card>
 
       <Card fullscreen>fullscreen</Card>
+
+      <Card className="primary-coloring">With custom class</Card>
     </Fragment>
   );
 });

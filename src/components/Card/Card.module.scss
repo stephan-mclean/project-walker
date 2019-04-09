@@ -1,21 +1,4 @@
 .container {
-  background-color: var(--color-white);
-  color: var(--color-fg-default);
   padding: var(--component-padding);
-  border-radius: var(--radius);
   box-shadow: var(--shadow-fg-tertiary-1-bottom-right-25);
-}
-
-.fullscreen {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-
-.container .titleDescContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-.container .titleDescContainer.centered {
-  align-items: center;
 }
