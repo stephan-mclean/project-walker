@@ -6,6 +6,10 @@
   border-radius: var(--radius);
 }
 
+.no-radius {
+  border-radius: 0;
+}
+
 .radius-top {
   border-radius: 0;
 
