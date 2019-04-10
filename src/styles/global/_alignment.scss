@@ -1,10 +1,6 @@
 // alignment utility classes - based on Flexbox
 .flex {
   display: flex;
-
-  > * {
-    display: inline-block; // fallback
-  }
 }
 
 .flex--wrap {

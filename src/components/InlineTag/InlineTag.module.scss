@@ -1,0 +1,7 @@
+.container {
+  height: var(--space-lg);
+  min-width: var(--space-xl);
+  padding: 0 var(--component-padding-sm);
+
+  transition: all 0.3s ease;
+}

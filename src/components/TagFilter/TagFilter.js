@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Card from "../Card/Card";
 import Button from "../Button/Button";
+import InlineTagList from "../InlineTagList/InlineTagList";
 
 class TagFilter extends Component {
   static propTypes = {
@@ -47,6 +48,38 @@ class TagFilter extends Component {
     return !tags.find(tag => !tag.selected);
   };
 
+  renderTags = () => {
+    const { tags } = this.props;
+    return (
+      <InlineTagList
+        tags={tags}
+        renderTagBy={(tag, index) => {
+          const coloringClass = tag.selected
+            ? `tag-${tag.tag}-coloring`
+            : `tag-${tag.tag}-inverted-coloring`;
+
+          let radiusClass = "no-radius";
+          if (index === 0) {
+            radiusClass = "radius-top-left";
+          } else if (index === tags.length - 1) {
+            radiusClass = "radius-bottom-right";
+          }
+          const onTagClick = this.toggleOne.bind(this, tag);
+          return (
+            <Button
+              className={`btn ${radiusClass} ${coloringClass}`}
+              onClick={onTagClick}
+              key={`tag-filter-${tag.tag}-${index}`}
+              data-testid={`tag-btn-${tag.tag}`}
+            >
+              {tag.text}
+            </Button>
+          );
+        }}
+      />
+    );
+  };
+
   render() {
     const { tags } = this.props;
     const allBtnClass = this.areAllSelected()
@@ -65,31 +98,7 @@ class TagFilter extends Component {
             </Button>
           </div>
 
-          <div>
-            {tags.map((tag, index) => {
-              const coloringClass = tag.selected
-                ? `tag-${tag.tag}-coloring`
-                : `tag-${tag.tag}-inverted-coloring`;
-
-              let radiusClass = "no-radius";
-              if (index === 0) {
-                radiusClass = "radius-top-left";
-              } else if (index === tags.length - 1) {
-                radiusClass = "radius-bottom-right";
-              }
-              const onTagClick = this.toggleOne.bind(this, tag);
-              return (
-                <Button
-                  className={`btn ${radiusClass} ${coloringClass}`}
-                  onClick={onTagClick}
-                  key={`tag-filter-${tag.tag}-${index}`}
-                  data-testid={`tag-btn-${tag.tag}`}
-                >
-                  {tag.text}
-                </Button>
-              );
-            })}
-          </div>
+          {this.renderTags()}
         </div>
       </Card>
     );
