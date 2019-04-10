@@ -18,3 +18,7 @@
     }
   }
 }
+
+.input.with-error {
+  border-color: var(--color-danger-default);
+}
