@@ -10,3 +10,7 @@
   --shadow-primary-dark-1-bottom-right-25: 1px 1px 4px 0
     rgba(var(--color-primary-dark-rgb), 0.25);
 }
+
+.shadow-fg-tertiary-1-bottom-right-25 {
+  box-shadow: var(--shadow-fg-tertiary-1-bottom-right-25);
+}

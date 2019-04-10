@@ -1,0 +1,24 @@
+.input {
+  height: 2rem;
+  width: 100%;
+  padding: var(--component-padding);
+  border: 1px solid transparent;
+  transition: 0.3s all ease;
+
+  ::placeholder {
+    color: var(--color-fg-tertiary);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid var(--color-fg-default);
+    &::placeholder {
+      color: var(--color-fg-default);
+    }
+  }
+}
+
+.input.with-error {
+  border-color: var(--color-danger-default);
+}
