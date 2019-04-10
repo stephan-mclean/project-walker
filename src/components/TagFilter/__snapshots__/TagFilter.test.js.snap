@@ -21,6 +21,7 @@ exports[`Testing the TagFilter component Should render the correct buttons 1`] =
     >
       <div
         className="flex flex--column"
+        data-testid="titleDescContainer"
       >
         <h6>
           Tags
@@ -96,6 +97,7 @@ exports[`Testing the TagFilter component Should toggle all selection values 1`] 
     >
       <div
         className="flex flex--column"
+        data-testid="titleDescContainer"
       >
         <h6>
           Tags
@@ -212,6 +214,7 @@ exports[`Testing the TagFilter component Should toggle all selection values 2`] 
     >
       <div
         className="flex flex--column"
+        data-testid="titleDescContainer"
       >
         <h6>
           Tags

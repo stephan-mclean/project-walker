@@ -38,4 +38,14 @@ describe("Testing the Card component", () => {
     expect(card).toMatchSnapshot();
     expect(card.hasClass("primary-coloring")).toEqual(true);
   });
+
+  it("Should center the title", () => {
+    const card = shallow(<Card title="Centered" centerTitle />);
+
+    expect(
+      card
+        .find('div[data-testid="titleDescContainer"]')
+        .hasClass("flex--center-y")
+    ).toBeTruthy();
+  });
 });
