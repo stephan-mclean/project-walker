@@ -15,7 +15,7 @@ const Card = ({ children, title, description, centerTitle, className }) => {
   return (
     <div className={cardClassName}>
       {(title || description) && (
-        <div className={titleDescClassName}>
+        <div className={titleDescClassName} data-testid="titleDescContainer">
           {title && <h6>{title}</h6>}
           {description && <p className="s2">{description}</p>}
         </div>

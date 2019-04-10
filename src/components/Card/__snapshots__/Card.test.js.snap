@@ -30,6 +30,7 @@ exports[`Testing the Card component Should render the description 1`] = `
 >
   <div
     className="flex flex--column"
+    data-testid="titleDescContainer"
   >
     <p
       className="s2"
@@ -46,6 +47,7 @@ exports[`Testing the Card component Should render the title 1`] = `
 >
   <div
     className="flex flex--column"
+    data-testid="titleDescContainer"
   >
     <h6>
       title
