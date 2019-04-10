@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the PaceIndicator component Should allow passing a custom class 1`] = `
+<div
+  className="default-coloring high-contrast-coloring"
+>
+  <div
+    className="margin-right--xs display--inline-block"
+    data-testid="timeContainer"
+  >
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={false}
+      flip={null}
+      icon="stopwatch"
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+     
+    <span>
+      <span
+        className="text--color-secondary"
+      >
+        32
+      </span>
+      <span
+        className="text--color-tertiary"
+      >
+        m
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Testing the PaceIndicator component Should render the correct distance icon 1`] = `
+<div
+  className="default-coloring "
+>
+  <div
+    className="display--inline-block"
+    data-testid="distanceContainer"
+  >
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={false}
+      flip={null}
+      icon="someicon"
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+     
+    <span>
+      <span
+        className="text--color-secondary"
+      >
+        3.2
+      </span>
+      <span
+        className="text--color-tertiary"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Testing the PaceIndicator component Should render the correct time icon 1`] = `
+<div
+  className="default-coloring "
+>
+  <div
+    className="margin-right--xs display--inline-block"
+    data-testid="timeContainer"
+  >
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={false}
+      flip={null}
+      icon="someicon"
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+     
+    <span>
+      <span
+        className="text--color-secondary"
+      >
+        32
+      </span>
+      <span
+        className="text--color-tertiary"
+      >
+        m
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Testing the PaceIndicator component Should render the distance 1`] = `
+<div
+  className="default-coloring "
+>
+  <div
+    className="display--inline-block"
+    data-testid="distanceContainer"
+  >
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={false}
+      flip={null}
+      icon="map-marker"
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+     
+    <span>
+      <span
+        className="text--color-secondary"
+      >
+        3.2
+      </span>
+      <span
+        className="text--color-tertiary"
+      >
+        km
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Testing the PaceIndicator component Should render the time 1`] = `
+<div
+  className="default-coloring "
+>
+  <div
+    className="margin-right--xs display--inline-block"
+    data-testid="timeContainer"
+  >
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={false}
+      flip={null}
+      icon="stopwatch"
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+     
+    <span>
+      <span
+        className="text--color-secondary"
+      >
+        1
+      </span>
+      <span
+        className="text--color-tertiary"
+      >
+        h
+      </span>
+    </span>
+    <span>
+      <span
+        className="text--color-secondary"
+      >
+        32
+      </span>
+      <span
+        className="text--color-tertiary"
+      >
+        m
+      </span>
+    </span>
+  </div>
+</div>
+`;

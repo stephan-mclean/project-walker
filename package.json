@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "firebase": "^5.9.3",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
@@ -53,7 +56,8 @@
       "!src/index.js",
       "!src/serviceWorker.js",
       "!src/setupTests.js",
-      "!src/firebase/*"
+      "!src/firebase/*",
+      "!src/fontawesome/*"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
