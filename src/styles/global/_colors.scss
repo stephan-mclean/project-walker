@@ -62,6 +62,10 @@
   @include withColors(var(--color-white), var(--color-fg-default));
 }
 
+.secondary-contrast-coloring {
+  @include withColors(var(--color-white), var(--color-fg-secondary));
+}
+
 .transparent-high-contrast-coloring {
   @include withColors(var(--color-white-75), var(--color-fg-default));
 }
