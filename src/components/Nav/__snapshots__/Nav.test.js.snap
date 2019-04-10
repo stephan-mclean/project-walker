@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the Nav component Should allow passing a custom class 1`] = `
+<nav
+  className="container secondary-contrast-coloring shadow-fg-tertiary-1-top-25 flex flex--space-evenly flex--center-y some-custom-class"
+>
+  <FontAwesomeIcon
+    border={false}
+    className=""
+    fixedWidth={false}
+    flip={null}
+    icon="home"
+    inverse={false}
+    listItem={false}
+    mask={null}
+    onClick={[Function]}
+    pull={null}
+    pulse={false}
+    rotation={null}
+    size={null}
+    spin={false}
+    symbol={false}
+    title=""
+    transform={null}
+  />
+  <FontAwesomeIcon
+    border={false}
+    className=""
+    fixedWidth={false}
+    flip={null}
+    icon="cog"
+    inverse={false}
+    listItem={false}
+    mask={null}
+    onClick={[Function]}
+    pull={null}
+    pulse={false}
+    rotation={null}
+    size={null}
+    spin={false}
+    symbol={false}
+    title=""
+    transform={null}
+  />
+</nav>
+`;
+
+exports[`Testing the Nav component Should render the default icons 1`] = `
+<nav
+  className="container secondary-contrast-coloring shadow-fg-tertiary-1-top-25 flex flex--space-evenly flex--center-y "
+>
+  <FontAwesomeIcon
+    border={false}
+    className=""
+    fixedWidth={false}
+    flip={null}
+    icon="home"
+    inverse={false}
+    listItem={false}
+    mask={null}
+    onClick={[Function]}
+    pull={null}
+    pulse={false}
+    rotation={null}
+    size={null}
+    spin={false}
+    symbol={false}
+    title=""
+    transform={null}
+  />
+  <FontAwesomeIcon
+    border={false}
+    className=""
+    fixedWidth={false}
+    flip={null}
+    icon="cog"
+    inverse={false}
+    listItem={false}
+    mask={null}
+    onClick={[Function]}
+    pull={null}
+    pulse={false}
+    rotation={null}
+    size={null}
+    spin={false}
+    symbol={false}
+    title=""
+    transform={null}
+  />
+</nav>
+`;
+
+exports[`Testing the Nav component Should render the main button 1`] = `
+<nav
+  className="container secondary-contrast-coloring shadow-fg-tertiary-1-top-25 flex flex--space-evenly flex--center-y "
+>
+  <FontAwesomeIcon
+    border={false}
+    className=""
+    fixedWidth={false}
+    flip={null}
+    icon="home"
+    inverse={false}
+    listItem={false}
+    mask={null}
+    onClick={[Function]}
+    pull={null}
+    pulse={false}
+    rotation={null}
+    size={null}
+    spin={false}
+    symbol={false}
+    title=""
+    transform={null}
+  />
+  <FontAwesomeIcon
+    border={false}
+    className="text--xl"
+    fixedWidth={false}
+    flip={null}
+    icon="someicon"
+    inverse={false}
+    listItem={false}
+    mask={null}
+    onClick={[Function]}
+    pull={null}
+    pulse={false}
+    rotation={null}
+    size={null}
+    spin={false}
+    symbol={false}
+    title=""
+    transform={null}
+  />
+  <FontAwesomeIcon
+    border={false}
+    className=""
+    fixedWidth={false}
+    flip={null}
+    icon="cog"
+    inverse={false}
+    listItem={false}
+    mask={null}
+    onClick={[Function]}
+    pull={null}
+    pulse={false}
+    rotation={null}
+    size={null}
+    spin={false}
+    symbol={false}
+    title=""
+    transform={null}
+  />
+</nav>
+`;
