@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./InlineTag.module.scss";
+import { TAG_TYPES } from "../../constants/tag";
 
 const InlineTag = ({ tag, className, children, ...otherProps }) => {
   const tagClass = `${
@@ -15,17 +16,7 @@ const InlineTag = ({ tag, className, children, ...otherProps }) => {
 };
 
 InlineTag.propTypes = {
-  tag: PropTypes.oneOf([
-    // TODO: Move this duplicated code
-    "one",
-    "two",
-    "three",
-    "four",
-    "five",
-    "six",
-    "seven",
-    "eight"
-  ]).isRequired,
+  tag: PropTypes.oneOf(TAG_TYPES).isRequired,
   className: PropTypes.string,
   children: PropTypes.any
 };
