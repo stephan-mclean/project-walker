@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the InlingTag component Should allow passing a custom class 1`] = `
+<div
+  className="container animate--width flex flex--center tag-undefined-coloring some-class"
+>
+  <small />
+</div>
+`;
+
+exports[`Testing the InlingTag component Should render the correct color class 1`] = `
+<div
+  className="container animate--width flex flex--center tag-one-coloring undefined"
+>
+  <small />
+</div>
+`;
+
+exports[`Testing the InlingTag component Should render the correct color class 2`] = `
+<div
+  className="container animate--width flex flex--center tag-two-coloring undefined"
+>
+  <small />
+</div>
+`;
+
+exports[`Testing the InlingTag component Should render the correct content 1`] = `
+<div
+  className="container animate--width flex flex--center tag-one-coloring undefined"
+>
+  <small>
+    One
+  </small>
+</div>
+`;
