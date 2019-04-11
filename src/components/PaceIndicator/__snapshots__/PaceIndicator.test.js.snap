@@ -2,7 +2,7 @@
 
 exports[`Testing the PaceIndicator component Should allow passing a custom class 1`] = `
 <div
-  className="default-coloring high-contrast-coloring"
+  className="high-contrast-coloring  high-contrast-coloring"
 >
   <div
     className="margin-right--xs display--inline-block"
@@ -45,7 +45,7 @@ exports[`Testing the PaceIndicator component Should allow passing a custom class
 
 exports[`Testing the PaceIndicator component Should render the correct distance icon 1`] = `
 <div
-  className="default-coloring "
+  className="high-contrast-coloring  "
 >
   <div
     className="display--inline-block"
@@ -86,7 +86,7 @@ exports[`Testing the PaceIndicator component Should render the correct distance 
 
 exports[`Testing the PaceIndicator component Should render the correct time icon 1`] = `
 <div
-  className="default-coloring "
+  className="high-contrast-coloring  "
 >
   <div
     className="margin-right--xs display--inline-block"
@@ -129,7 +129,7 @@ exports[`Testing the PaceIndicator component Should render the correct time icon
 
 exports[`Testing the PaceIndicator component Should render the distance 1`] = `
 <div
-  className="default-coloring "
+  className="high-contrast-coloring  "
 >
   <div
     className="display--inline-block"
@@ -172,7 +172,7 @@ exports[`Testing the PaceIndicator component Should render the distance 1`] = `
 
 exports[`Testing the PaceIndicator component Should render the time 1`] = `
 <div
-  className="default-coloring "
+  className="high-contrast-coloring  "
 >
   <div
     className="margin-right--xs display--inline-block"

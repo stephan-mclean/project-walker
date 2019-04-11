@@ -20,7 +20,7 @@ const PaceIndicator = ({
   distanceIcon,
   className
 }) => {
-  const paceClass = `default-coloring ${className || ""}`;
+  const paceClass = `high-contrast-coloring  ${className || ""}`;
 
   return (
     <div className={paceClass}>

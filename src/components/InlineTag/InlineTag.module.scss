@@ -1,6 +1,12 @@
+@import "../../styles/global/breakpoints";
 .container {
-  height: var(--space-lg);
-  width: var(--space-xl);
+  height: var(--space-md);
+  width: var(--space-lg);
   padding: 0 var(--component-padding-sm);
   overflow: hidden;
+
+  @include breakpoint(md) {
+    height: var(--space-lg);
+    width: var(--space-xl);
+  }
 }

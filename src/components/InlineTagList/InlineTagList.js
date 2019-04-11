@@ -12,11 +12,12 @@ const InlineTagList = ({
   const inlineTagClass = `flex flex--wrap ${className}`;
   return (
     <div className={inlineTagClass}>
-      {tags.map((tag, idx) => {
-        const onClick = () => onTagClick(tag);
+      {tags &&
+        tags.map((tag, idx) => {
+          const onClick = () => onTagClick(tag);
 
-        return renderTagBy(tag, idx, onClick, showTagText, tags);
-      })}
+          return renderTagBy(tag, idx, onClick, showTagText, tags);
+        })}
     </div>
   );
 };
