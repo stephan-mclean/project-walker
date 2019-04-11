@@ -9,7 +9,10 @@ storiesOf("Components", module).add("RouteTile", () => {
     { tag: "two", text: "two" },
     { tag: "three", text: "three" },
     { tag: "four", text: "four" },
-    { tag: "five", text: "five" }
+    { tag: "five", text: "five" },
+    { tag: "six", text: "six" },
+    { tag: "seven", text: "seven" },
+    { tag: "eight", text: "eight" }
   ];
   const testPace = {
     mins: 32,
@@ -18,15 +21,10 @@ storiesOf("Components", module).add("RouteTile", () => {
   };
   return (
     <Fragment>
-      <RouteTile
-        title="My Route"
-        tags={testTags}
-        className="margin-top margin-bottom"
-      />
+      <RouteTile title="My Route" className="margin-top margin-bottom" />
       <RouteTile
         title="My Second Route"
         tags={testTags}
-        showTagText={true}
         className="margin-bottom"
       />
 
