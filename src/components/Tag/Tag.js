@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Tag.module.scss";
+import { TAG_TYPES } from "../../constants/tag";
 
 const Tag = ({ tag, children, className, ...otherProps }) => {
   const tagSquareClass = `${styles.tag} tag-${tag}-coloring margin-right`;
@@ -18,16 +19,7 @@ const Tag = ({ tag, children, className, ...otherProps }) => {
 };
 
 Tag.propTypes = {
-  tag: PropTypes.oneOf([
-    "one",
-    "two",
-    "three",
-    "four",
-    "five",
-    "six",
-    "seven",
-    "eight"
-  ]).isRequired,
+  tag: PropTypes.oneOf(TAG_TYPES).isRequired,
   children: PropTypes.any,
   className: PropTypes.string
 };
