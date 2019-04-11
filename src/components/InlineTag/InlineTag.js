@@ -5,7 +5,7 @@ import styles from "./InlineTag.module.scss";
 const InlineTag = ({ tag, className, children, ...otherProps }) => {
   const tagClass = `${
     styles.container
-  } flex flex--center tag-${tag}-coloring ${className}`;
+  } animate--width flex flex--center tag-${tag}-coloring ${className}`;
 
   return (
     <div className={tagClass} {...otherProps}>

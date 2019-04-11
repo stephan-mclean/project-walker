@@ -3,27 +3,4 @@
   width: var(--space-xl);
   padding: 0 var(--component-padding-sm);
   overflow: hidden;
-  visibility: hidden;
-
-  animation: animateWidth 0.3s linear;
-  animation-fill-mode: forwards;
-  transform-origin: 0% 100%;
-}
-
-@for $i from 1 to 9 {
-  .container:nth-child(#{$i}) {
-    animation-delay: $i * 0.125s;
-  }
-}
-
-@keyframes animateWidth {
-  from {
-    transform: scaleX(0);
-    visibility: hidden;
-  }
-
-  to {
-    transform: scaleX(1);
-    visibility: visible;
-  }
 }
