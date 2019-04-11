@@ -47,24 +47,40 @@ exports[`Testing the TagFilter component Should render the correct buttons 1`] =
             </button>
           </Button>
         </div>
-        <div>
-          <Button
-            className="btn radius-top-left tag-one-inverted-coloring"
-            data-testid="tag-btn-one"
-            key="tag-filter-one-0"
-            onClick={[Function]}
-            type="button"
+        <InlineTagList
+          onTagClick={[Function]}
+          renderTagBy={[Function]}
+          tags={
+            Array [
+              Object {
+                "selected": false,
+                "tag": "one",
+                "text": "one",
+              },
+            ]
+          }
+        >
+          <div
+            className="flex flex--wrap undefined"
           >
-            <button
+            <Button
               className="btn radius-top-left tag-one-inverted-coloring"
               data-testid="tag-btn-one"
+              key="tag-filter-one-0"
               onClick={[Function]}
               type="button"
             >
-              one
-            </button>
-          </Button>
-        </div>
+              <button
+                className="btn radius-top-left tag-one-inverted-coloring"
+                data-testid="tag-btn-one"
+                onClick={[Function]}
+                type="button"
+              >
+                one
+              </button>
+            </Button>
+          </div>
+        </InlineTagList>
       </div>
     </div>
   </Card>
@@ -123,40 +139,61 @@ exports[`Testing the TagFilter component Should toggle all selection values 1`] 
             </button>
           </Button>
         </div>
-        <div>
-          <Button
-            className="btn radius-top-left tag-one-inverted-coloring"
-            data-testid="tag-btn-one"
-            key="tag-filter-one-0"
-            onClick={[Function]}
-            type="button"
+        <InlineTagList
+          onTagClick={[Function]}
+          renderTagBy={[Function]}
+          tags={
+            Array [
+              Object {
+                "selected": false,
+                "tag": "one",
+                "text": "one",
+              },
+              Object {
+                "selected": false,
+                "tag": "two",
+                "text": "two",
+              },
+            ]
+          }
+        >
+          <div
+            className="flex flex--wrap undefined"
           >
-            <button
+            <Button
               className="btn radius-top-left tag-one-inverted-coloring"
               data-testid="tag-btn-one"
+              key="tag-filter-one-0"
               onClick={[Function]}
               type="button"
             >
-              one
-            </button>
-          </Button>
-          <Button
-            className="btn radius-bottom-right tag-two-inverted-coloring"
-            data-testid="tag-btn-two"
-            key="tag-filter-two-1"
-            onClick={[Function]}
-            type="button"
-          >
-            <button
+              <button
+                className="btn radius-top-left tag-one-inverted-coloring"
+                data-testid="tag-btn-one"
+                onClick={[Function]}
+                type="button"
+              >
+                one
+              </button>
+            </Button>
+            <Button
               className="btn radius-bottom-right tag-two-inverted-coloring"
               data-testid="tag-btn-two"
+              key="tag-filter-two-1"
               onClick={[Function]}
               type="button"
             >
-              two
-            </button>
-          </Button>
-        </div>
+              <button
+                className="btn radius-bottom-right tag-two-inverted-coloring"
+                data-testid="tag-btn-two"
+                onClick={[Function]}
+                type="button"
+              >
+                two
+              </button>
+            </Button>
+          </div>
+        </InlineTagList>
       </div>
     </div>
   </Card>
@@ -240,40 +277,61 @@ exports[`Testing the TagFilter component Should toggle all selection values 2`] 
             </button>
           </Button>
         </div>
-        <div>
-          <Button
-            className="btn radius-top-left tag-one-inverted-coloring"
-            data-testid="tag-btn-one"
-            key="tag-filter-one-0"
-            onClick={[Function]}
-            type="button"
+        <InlineTagList
+          onTagClick={[Function]}
+          renderTagBy={[Function]}
+          tags={
+            Array [
+              Object {
+                "selected": true,
+                "tag": "one",
+                "text": "one",
+              },
+              Object {
+                "selected": true,
+                "tag": "two",
+                "text": "two",
+              },
+            ]
+          }
+        >
+          <div
+            className="flex flex--wrap undefined"
           >
-            <button
+            <Button
               className="btn radius-top-left tag-one-inverted-coloring"
               data-testid="tag-btn-one"
+              key="tag-filter-one-0"
               onClick={[Function]}
               type="button"
             >
-              one
-            </button>
-          </Button>
-          <Button
-            className="btn radius-bottom-right tag-two-inverted-coloring"
-            data-testid="tag-btn-two"
-            key="tag-filter-two-1"
-            onClick={[Function]}
-            type="button"
-          >
-            <button
+              <button
+                className="btn radius-top-left tag-one-inverted-coloring"
+                data-testid="tag-btn-one"
+                onClick={[Function]}
+                type="button"
+              >
+                one
+              </button>
+            </Button>
+            <Button
               className="btn radius-bottom-right tag-two-inverted-coloring"
               data-testid="tag-btn-two"
+              key="tag-filter-two-1"
               onClick={[Function]}
               type="button"
             >
-              two
-            </button>
-          </Button>
-        </div>
+              <button
+                className="btn radius-bottom-right tag-two-inverted-coloring"
+                data-testid="tag-btn-two"
+                onClick={[Function]}
+                type="button"
+              >
+                two
+              </button>
+            </Button>
+          </div>
+        </InlineTagList>
       </div>
     </div>
   </Card>

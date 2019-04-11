@@ -23,7 +23,7 @@ describe("Testing the InlingTag component", () => {
   });
 
   it("Should allow passing a custom class", () => {
-    const tag = shallow(<InlineTag className="some-class" />);
+    const tag = shallow(<InlineTag tag="one" className="some-class" />);
     expect(tag).toMatchSnapshot();
     expect(tag.hasClass("some-class")).toEqual(true);
   });

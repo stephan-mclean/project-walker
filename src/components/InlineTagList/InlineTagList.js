@@ -53,7 +53,8 @@ InlineTagList.defaultProps = {
         {showTagText && tag.text}
       </InlineTag>
     );
-  }
+  },
+  onTagClick: () => {}
 };
 
 export default InlineTagList;

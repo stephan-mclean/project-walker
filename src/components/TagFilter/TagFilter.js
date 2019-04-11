@@ -81,7 +81,6 @@ class TagFilter extends Component {
   };
 
   render() {
-    const { tags } = this.props;
     const allBtnClass = this.areAllSelected()
       ? "btn margin-right"
       : "btn btn--inverted margin-right";
