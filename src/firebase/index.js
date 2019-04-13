@@ -9,4 +9,4 @@ firebase.initializeApp({
   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_ID
 });
 
-export const authRef = firebase.auth();
+export const authRef = firebase.auth;
