@@ -28,9 +28,11 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.3.5",
+    "firebase-mock": "^2.2.10",
     "firebase-tools": "^6.5.3",
     "react-scripts": "2.1.8",
-    "redux-actions": "^2.6.5"
+    "redux-actions": "^2.6.5",
+    "redux-mock-store": "^1.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -58,7 +60,9 @@
       "!src/serviceWorker.js",
       "!src/setupTests.js",
       "!src/firebase/*",
-      "!src/fontawesome/*"
+      "!src/fontawesome/*",
+      "!src/redux/create.js",
+      "!src/redux/modules/reducer.js"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"

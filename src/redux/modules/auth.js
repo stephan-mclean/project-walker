@@ -1,14 +1,13 @@
 import { createAction, handleActions } from "redux-actions";
 import { authRef } from "../../firebase";
-import { auth } from "firebase";
 
 /**
  * Actions
  */
-const GET_USER = createAction("GET_USER");
-const GET_USER_FAILED = createAction("GET_USER_FAILED");
-const LINK_ACCOUNT = createAction("LINK_ACCOUNT");
-const LINK_ACCOUNT_FAILED = createAction("LINK_ACCOUNT_FAILED");
+export const GET_USER = createAction("GET_USER");
+export const GET_USER_FAILED = createAction("GET_USER_FAILED");
+export const LINK_ACCOUNT = createAction("LINK_ACCOUNT");
+export const LINK_ACCOUNT_FAILED = createAction("LINK_ACCOUNT_FAILED");
 
 /**
  * Reducer
@@ -26,7 +25,8 @@ export default handleActions(
     }),
     [GET_USER_FAILED]: (state, action) => ({
       currentUser: null,
-      getUserError: action.payload
+      getUserError: action.payload,
+      linkAccountError: null
     }),
     [LINK_ACCOUNT]: state => ({
       ...state,
@@ -44,14 +44,11 @@ export default handleActions(
  * Action creators
  */
 export const getCurrentUser = () => dispatch => {
-  console.log("get current user");
-  authRef().onAuthStateChanged(
+  return authRef().onAuthStateChanged(
     user => {
-      console.log("dispatch current user", user);
       dispatch(GET_USER(user));
     },
     error => {
-      console.error(error);
       dispatch(GET_USER_FAILED(error));
     }
   );
@@ -65,38 +62,27 @@ const signInWithProvider = provider => {
   return authRef().signInWithPopup(provider);
 };
 
-export const signInWithFB = () => () => {
-  const provider = new auth.FacebookAuthProvider();
-  signInWithProvider(provider);
-};
-
 export const signInWithGoogle = () => () => {
-  const provider = new auth.GoogleAuthProvider();
+  const provider = new authRef.GoogleAuthProvider();
   signInWithProvider(provider);
 };
 
 const linkWithProvider = provider => dispatch => {
-  return auth()
+  return authRef()
     .currentUser.linkWithPopup(provider)
     .then(
       () => {
         dispatch(LINK_ACCOUNT());
       },
       error => {
-        console.error(error);
         dispatch(LINK_ACCOUNT_FAILED(error));
       }
     );
 };
 
-export const linkWithFB = () => dispatch => {
-  const provider = new auth.FacebookAuthProvider();
-  dispatch(linkWithProvider(provider));
-};
-
 export const linkWithGoogle = () => dispatch => {
-  const provider = new auth.GoogleAuthProvider();
-  dispatch(linkWithProvider(provider));
+  const provider = new authRef.GoogleAuthProvider();
+  return dispatch(linkWithProvider(provider));
 };
 
 export const signOut = () => () => {

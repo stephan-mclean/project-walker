@@ -5,12 +5,11 @@ import {
   getCurrentUser,
   signInAnonymously,
   signOut,
-  linkWithFB,
   linkWithGoogle,
   signInWithGoogle
 } from "./redux/modules/auth";
 
-class App extends Component {
+export class App extends Component {
   constructor(props) {
     super(props);
 
@@ -31,10 +30,6 @@ class App extends Component {
         <div>
           <Button className="btn" onClick={signOut}>
             Sign out
-          </Button>
-
-          <Button className="btn" onClick={linkWithFB}>
-            Link FB
           </Button>
 
           <Button className="btn" onClick={linkWithGoogle}>
@@ -66,7 +61,6 @@ export default connect(
     getCurrentUser,
     signInAnonymously,
     signOut,
-    linkWithFB,
     linkWithGoogle,
     signInWithGoogle
   }
