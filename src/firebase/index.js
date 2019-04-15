@@ -10,3 +10,5 @@ firebase.initializeApp({
 });
 
 export const authRef = firebase.auth;
+export const dbRef = firebase.firestore();
+export const routesRef = dbRef.collection("routes");
