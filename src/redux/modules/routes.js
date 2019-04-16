@@ -1,4 +1,5 @@
 import { createAction, handleActions } from "redux-actions";
+import { createSelector } from "reselect";
 import { routesRef, authRef } from "../../firebase";
 import { Route } from "../models/route";
 
@@ -13,29 +14,26 @@ export const GET_ROUTES_FAILED = createAction("GET_ROUTES_FAILED");
  * Reducer
  */
 const defaultState = {
-  routes: [],
+  items: [],
   loading: false,
-  failed: false,
-  failure: null
+  error: null
 };
 export default handleActions(
   {
     [GET_ROUTES]: state => ({
       ...state,
       loading: true,
-      failed: false,
-      failure: null
+      error: null
     }),
     [GET_ROUTES_SUCCESS]: (state, action) => ({
       ...state,
       loading: false,
-      routes: action.payload
+      items: action.payload
     }),
     [GET_ROUTES_FAILED]: (state, action) => ({
       ...state,
       loading: false,
-      failed: true,
-      failure: action.payload
+      error: action.payload
     })
   },
   defaultState
@@ -62,8 +60,15 @@ export const getAllRoutes = () => dispatch => {
         dispatch(GET_ROUTES_SUCCESS(routes));
       },
       error => {
-        console.error(error);
         dispatch(GET_ROUTES_FAILED(error));
       }
     );
 };
+
+/**
+ * Selectors
+ */
+export const getSortedRoutes = createSelector(
+  state => state.routes.items,
+  routes => routes.sort((a, b) => b.dateAdded - a.dateAdded)
+);

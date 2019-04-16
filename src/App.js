@@ -21,7 +21,6 @@ export class App extends Component {
       currentUser,
       signInAnonymously,
       signOut,
-      linkWithFB,
       linkWithGoogle,
       signInWithGoogle
     } = this.props;

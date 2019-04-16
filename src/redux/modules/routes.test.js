@@ -1,7 +1,13 @@
 import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import * as mockfirebase from "../../firebase/__mocks__";
-import { GET_ROUTES, GET_ROUTES_SUCCESS, getAllRoutes } from "./routes";
+import reducer, {
+  GET_ROUTES,
+  GET_ROUTES_SUCCESS,
+  getAllRoutes,
+  getSortedRoutes,
+  GET_ROUTES_FAILED
+} from "./routes";
 import { Route } from "../models/route";
 
 const middlewares = [thunk];
@@ -15,16 +21,18 @@ const mockCurrentUser = {
   uid: 1234567
 };
 
+const mockFirebaseAuth = () => {
+  mockfirebase.authRef().changeAuthState(mockCurrentUser);
+  mockfirebase.authRef().flush();
+};
+
 describe("Testing routes actions", () => {
-  beforeEach(() => {
-    mockfirebase.authRef().changeAuthState(mockCurrentUser);
-    mockfirebase.authRef().flush();
-  });
+  beforeEach(mockFirebaseAuth);
 
   it("Should retrieve routes successfully", () => {
     const expected = [GET_ROUTES(), GET_ROUTES_SUCCESS([])];
     const store = mockStore({
-      routes: { routes: [], loading: false, failed: false }
+      routes: { items: [], loading: false, error: null }
     });
 
     mockfirebase.routesRef.autoFlush();
@@ -42,7 +50,7 @@ describe("Testing routes actions", () => {
     };
     const mockRouteID = "mock-route";
     const store = mockStore({
-      routes: { routes: [], loading: false, failed: false }
+      routes: { items: [], loading: false, error: null }
     });
     const expected = [
       GET_ROUTES(),
@@ -65,7 +73,7 @@ describe("Testing routes actions", () => {
       dateAdded: new Date()
     });
     const store = mockStore({
-      routes: { routes: [], loading: false, failed: false }
+      routes: { items: [], loading: false, error: null }
     });
     const expected = [GET_ROUTES(), GET_ROUTES_SUCCESS([])];
 
@@ -74,5 +82,84 @@ describe("Testing routes actions", () => {
     return store.dispatch(getAllRoutes()).then(() => {
       expect(store.getActions()).toEqual(expected);
     });
+  });
+});
+
+describe("Testing the routes reducer", () => {
+  it("Should return the default state", () => {
+    const expected = {
+      items: [],
+      loading: false,
+      error: null
+    };
+
+    expect(reducer(undefined, {})).toEqual(expected);
+  });
+
+  it("Should handle GET_ROUTES", () => {
+    const defaultState = {
+      items: [],
+      loading: false,
+      error: null
+    };
+
+    const expected = {
+      items: [],
+      loading: true,
+      error: null
+    };
+
+    expect(reducer(defaultState, GET_ROUTES())).toEqual(expected);
+  });
+
+  it("Should handle GET_ROUTES_SUCCESS", () => {
+    const defaultState = {
+      items: [],
+      loading: true,
+      error: null
+    };
+
+    const expected = {
+      items: [1, 2, 3],
+      loading: false,
+      error: null
+    };
+
+    expect(reducer(defaultState, GET_ROUTES_SUCCESS([1, 2, 3]))).toEqual(
+      expected
+    );
+  });
+
+  it("Should handle GET_ROUTES_FAILED", () => {
+    const defaultState = {
+      items: [],
+      loading: true,
+      error: null
+    };
+    const err = new Error("msg");
+    const expected = {
+      items: [],
+      loading: false,
+      error: err
+    };
+
+    expect(reducer(defaultState, GET_ROUTES_FAILED(err))).toEqual(expected);
+  });
+});
+
+describe("Testing the routes selector", () => {
+  it("Should sort the routes by date added", () => {
+    const routeOne = {
+      dateAdded: new Date(1970, 1, 1)
+    };
+    const routeTwo = {
+      dateAdded: new Date(1970, 1, 2)
+    };
+
+    const unsorted = [routeOne, routeTwo];
+    const state = { routes: { items: unsorted } };
+    const expected = [routeTwo, routeOne];
+
+    expect(getSortedRoutes(state)).toEqual(expected);
   });
 });
