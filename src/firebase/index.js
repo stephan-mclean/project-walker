@@ -8,3 +8,7 @@ firebase.initializeApp({
   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_ID
 });
+
+export const authRef = firebase.auth;
+export const dbRef = firebase.firestore();
+export const routesRef = dbRef.collection("routes");
