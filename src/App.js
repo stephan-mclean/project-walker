@@ -7,7 +7,7 @@ import {
   signOut,
   linkWithGoogle,
   signInWithGoogle
-} from "./redux/modules/auth";
+} from "./redux/modules/auth/auth";
 
 export class App extends Component {
   constructor(props) {
