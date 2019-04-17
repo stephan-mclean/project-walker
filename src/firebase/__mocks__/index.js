@@ -23,6 +23,7 @@ const mocksdk = new firebasemock.MockFirebaseSdk(
   }
 );
 
+export default mocksdk;
 export const authRef = mocksdk.auth;
 export const dbRef = mocksdk.firestore();
 export const routesRef = dbRef.collection("routes");
