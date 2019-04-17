@@ -1,6 +1,6 @@
 import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
-import * as mockfirebase from "../../firebase/__mocks__";
+import * as mockfirebase from "../../../firebase/__mocks__";
 import reducer, {
   GET_ROUTES,
   GET_ROUTES_SUCCESS,
@@ -8,12 +8,12 @@ import reducer, {
   getSortedRoutes,
   GET_ROUTES_FAILED
 } from "./routes";
-import { Route } from "../models/route";
+import { Route } from "../../models/route";
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
-jest.mock("../../firebase", () => {
+jest.mock("../../../firebase", () => {
   return mockfirebase;
 });
 

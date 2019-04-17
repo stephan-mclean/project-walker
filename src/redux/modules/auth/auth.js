@@ -1,5 +1,5 @@
 import { createAction, handleActions } from "redux-actions";
-import { authRef } from "../../firebase";
+import { authRef } from "../../../firebase";
 
 /**
  * Actions

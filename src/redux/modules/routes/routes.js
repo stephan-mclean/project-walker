@@ -1,7 +1,7 @@
 import { createAction, handleActions } from "redux-actions";
 import { createSelector } from "reselect";
-import { routesRef, authRef } from "../../firebase";
-import { Route } from "../models/route";
+import { routesRef, authRef } from "../../../firebase";
+import { Route } from "../../models/route";
 
 /**
  * Actions

@@ -1,6 +1,6 @@
 import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
-import * as mockfirebase from "../../firebase/__mocks__";
+import * as mockfirebase from "../../../firebase/__mocks__";
 import reducer, {
   getCurrentUser,
   signInAnonymously,
@@ -16,7 +16,7 @@ import reducer, {
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
-jest.mock("../../firebase", () => {
+jest.mock("../../../firebase", () => {
   return mockfirebase;
 });
 
