@@ -27,3 +27,4 @@ export default mocksdk;
 export const authRef = mocksdk.auth;
 export const dbRef = mocksdk.firestore();
 export const routesRef = dbRef.collection("routes");
+export const tagsRef = dbRef.collection("tags");
